@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "dynamodb": "^0.3.6"
+  },
+  "devDependencies": {
+    "node-uuid": "^1.4.7"
   }
 }

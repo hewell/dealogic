@@ -14,6 +14,8 @@ module.exports.handler = function(event, context, cb) {
     
     switch(operation){
         case "create":
+            var uuid = require('node-uuid');
+            event.payload.Item.id = uuid.v1();
             dynamo.putItem(event.payload, context.done);
             break;
             
