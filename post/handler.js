@@ -9,19 +9,14 @@ module.exports.handler = function(event, context, cb) {
     
     var operation = event.operation;
     if(event.tableName){
-        event.payload.tableName = event.tableName;
+        event.payload.TableName = event.tableName;
     }
     
     switch(operation){
         case "create":
-            var uuid = require('node-uuid');
-            event.payload.Item.id = uuid.v1();
+            event.payload.Item.id = "1";
             dynamo.putItem(event.payload, context.done);
             break;
             
     }
-    
-    return cb(null, {
-    message: 'Go Serverless! Your Lambda function executed successfully!'
-    });
 };
