@@ -9,7 +9,7 @@ module.exports.handler = function(event, context, cb) {
     
     var operation = event.operation;
     if(event.tableName){
-        event.payload.TableName = event.tableName;
+        event.payload.tableName = event.tableName;
     }
     
     switch(operation){
@@ -18,6 +18,7 @@ module.exports.handler = function(event, context, cb) {
             break;
             
     }
+    
     return cb(null, {
     message: 'Go Serverless! Your Lambda function executed successfully!'
     });
