@@ -20,5 +20,6 @@
                 }
             }
         }
-    }
+    },
+    "apiResponsePostReadTemplate": "$input.path('$').Item.json"
 }
