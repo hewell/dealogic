@@ -17,6 +17,9 @@ module.exports.handler = function (event, context, cb) {
         event.payload.Item.id = event.payload.Item.content.id;
         saveFeed(event.payload.Item.content.host, event.payload.Item.content.path, event.payload, context);
         break;
+    case "read":
+        dynamo.getItem(event.payload, context.done);
+        break;
     }
 };
 

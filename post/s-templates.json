@@ -9,5 +9,16 @@
                 }
             }
         }
+    },
+    "apiRequestPostReadTemplate": {
+        "application/json": {
+            "operation": "read",
+            "tableName": "dealogic",
+            "payload": {
+                "Key": {
+                    "id": "$input.params('id')"
+                }
+            }
+        }
     }
 }
