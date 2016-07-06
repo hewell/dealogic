@@ -1,0 +1,24 @@
+{
+    "deals": [
+        {
+            "id": "64631",
+            "path": "/scripts/dwmaisapi.dll?MAILSERV&ACTION=EXECLIB&LIBID=63641&ACCOUNT=DEALOGIC&USERNAME=AFR_TABLES&PASSWORD=XML&FORMAT=XML"
+    },
+        {
+            "id": "64632",
+            "path": "/scripts/dwmaisapi.dll?MAILSERV&ACTION=EXECLIB&LIBID=63641&ACCOUNT=DEALOGIC&USERNAME=AFR_TABLES&PASSWORD=XML&FORMAT=XML"
+    },
+        {
+            "id": "64633",
+            "path": "/scripts/dwmaisapi.dll?MAILSERV&ACTION=EXECLIB&LIBID=63641&ACCOUNT=DEALOGIC&USERNAME=AFR_TABLES&PASSWORD=XML&FORMAT=XML"
+    },
+        {
+            "id": "64634",
+            "path": "/scripts/dwmaisapi.dll?MAILSERV&ACTION=EXECLIB&LIBID=63641&ACCOUNT=DEALOGIC&USERNAME=AFR_TABLES&PASSWORD=XML&FORMAT=XML"
+    },
+        {
+            "id": "64635",
+            "path": "/scripts/dwmaisapi.dll?MAILSERV&ACTION=EXECLIB&LIBID=63641&ACCOUNT=DEALOGIC&USERNAME=AFR_TABLES&PASSWORD=XML&FORMAT=XML"
+    }
+]
+}

@@ -39,9 +39,14 @@ function saveFeed(host, path, payload, context) {
                 if (err) {
                     console.log('Got error: ' + err.message);
                 } else {
-                    payload.Item.json = JSON.stringify(result);
-                    dynamo.putItem(payload, context.done);
-                    console.log('Done.');
+                    var jsonStr = JSON.stringify(result);
+                    if (jsonStr !== "{\"STATUS\":\"FAILED\"}") {
+                        payload.Item.json = jsonStr;
+                        dynamo.putItem(payload, context.done);
+                        console.log('Done.');
+                    } else {
+                        console.log('Failed to read xml feed.');
+                    }
                 }
             });
         }))
